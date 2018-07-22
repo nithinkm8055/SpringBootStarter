@@ -1,0 +1,11 @@
+1) Usually while starting the spring Application for the first time after configuration, 
+you may end up getting the following error :
+
+ERROR : 
+springboot java.lang.IllegalArgumentException: Sources must not be empty.
+
+Resolution : 
+* Check your eclipse debug configurations and make sure your Main class is not set to the followng :
+org.springframework.boot.SpringApplication 
+
+If yes, change the entry to your fully qualified main class Name
