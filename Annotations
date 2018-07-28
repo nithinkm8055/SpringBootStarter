@@ -1,0 +1,25 @@
+1. @SpringBootApplication --> Entry point for a spring boot application
+2. @RestController --> Controller for spring
+3. @Service --> Service for spring
+4. @RequestMapping --> map a request to url and a http method
+   @RequestMapping(method=RequestMethod.POST, value="/create")
+   
+   Usage :
+   @RequestMapping(method=RequestMethod.PUT, value="/topics/{id}")
+    public List<Topic> updateTopic(@RequestBody Topic topic, @PathVariable String id) {
+      return topicService.updateTopic(topic, id);
+    }
+    
+5. @Autowired --> aide with dependency Injection
+6. @RequestParam --> Query params
+   Usage :
+   @RequestMapping("/add")
+    public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
+      User user = new User(name, email);
+      userRepository.save(user);
+      return "Saved";
+    } 
+    
+7. @GeneratedValue --> create generated values
+   Usage:
+   @GeneratedValue(strategy=GenerationType.AUTO)
