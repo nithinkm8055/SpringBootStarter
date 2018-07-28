@@ -1,0 +1,23 @@
+SQL Setup on mac
+------------------
+1) brew install mysql
+2) start the mysql server
+  2.1 Find location of mysql server using:
+    find . -name mysql
+  2.2 Go to installation location and type
+    mysql.server start
+3)sudo mysql
+
+===================================================================================================
+
+Create database
+------------------
+mysql> create database db_example; -- Create the new database
+mysql> create user 'springuser'@'localhost' identified by 'ThePassword'; -- Creates the user
+mysql> grant all on db_example.* to 'springuser'@'localhost'; -- Gives all the privileges to the new user on the newly created database(Not recommended)
+
+===================================================================================================
+
+Find which port MySql is running on
+------------------------------------
+SHOW GLOBAL VARIABLES LIKE 'PORT';
