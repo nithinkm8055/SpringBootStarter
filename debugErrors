@@ -9,3 +9,14 @@ Resolution :
 org.springframework.boot.SpringApplication 
 
 If yes, change the entry to your fully qualified main class Name
+
+
+2) Starting a mySql server fails with error :
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+
+Resolution :
+i) On a mac or linux 
+  find . -name mysql // to find the installation path for mysql
+  //go to the installation directory path from above and type
+  mysql.server start
+
