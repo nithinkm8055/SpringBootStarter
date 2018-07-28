@@ -1,4 +1,7 @@
-1) Usually while starting the spring Application for the first time after configuration, 
+DEBUG 1 : Start SpringBoot Application
+--------------------------------------
+
+Usually while starting the spring Application for the first time after configuration, 
 you may end up getting the following error :
 
 ERROR : 
@@ -11,7 +14,12 @@ org.springframework.boot.SpringApplication
 If yes, change the entry to your fully qualified main class Name
 
 
-2) Starting a mySql server fails with error :
+===========================================================================================================
+
+DEBUG 2 : Start MySQL Server
+--------------------------------------
+
+Starting a mySql server fails with error :
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 
 Resolution :
@@ -20,3 +28,4 @@ i) On a mac or linux
   //go to the installation directory path from above and type
   mysql.server start
 
+===========================================================================================================
