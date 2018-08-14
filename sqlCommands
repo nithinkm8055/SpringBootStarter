@@ -1,0 +1,4 @@
+1) sudo mysql; -->
+2) use {database_name}; --> use a database
+3) show tables; --> show tables in database
+4) select * from {table}; --> list all contents in table
